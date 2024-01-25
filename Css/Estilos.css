@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Righteous&family=Unbounded&display=swap');
+
+*{ /*todofmose*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{ /*Tipo de letra, fondo de todo*/
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+    background: linear-gradient(-40deg, #7BD5F5, #787FF6, #4ADEDE,#1CA7EC,#1F2F98);
+	background-size: 400%, 400%;
+	animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+/*0000000000000000000000000000000000000000000000000000000*/
+.banner3{ /*"Productos"*/
+    
+    position: auto;
+    height: auto;/*Se aplica tamaño vertical*/
+    background: url(img/banner.jpg) no-repeat center center/cover;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    
+}
+.banner3 .texto_banner3{/*Estilo Productos */
+    position: relative;/* Evita que se mueva*/
+    width: 80%;/*Anchura transparente*/
+    height: auto; /*Altura transparente*/
+    text-align: center;
+    border-radius: 20px;
+    margin: 5%;
+    left: 4%;
+    
+    background: rgba(255, 255, 255, .3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    
+}
+div .banner3{
+    margin: auto;
+    
+}
+.banner3 .texto_banner3 p,
+.banner3 .texto_banner3 h1{ /*Estilo la palabra: Productos*/
+    color: white;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+/*000000000000000000000000000000000000000000000000000000000000000*/
+.productos {/*cuadro de las imagenes,titulos y descripciones*/
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.25);
+    margin: 20px;
+}/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+.productos .contenido{
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+h2 .productos {
+    background-color: darkviolet;/*no*/
+    
+}
+
+div .imagen {
+    color: 0;/*no*/
+    text-align: center;
+    margin: 10px 0;
+    /*display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;*/
+}
+div .imagen .collares{
+    width: auto;
+    position:absolute;
+    box-sizing: border-box;
+    
+}
+.boton3:hover{
+    background-color:  #fe4164;
+    box-shadow: 7px 7px 7px  #1b4f8f;
+}
+h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 15px 40px;
+
+}
+.imagen img{
+    width: 80%;/*ancho*/
+    height: 40%;/*altura*/
+    border-radius: 20px;
+    margin: 10px 15px;
+}
+.imagen p /*p1*/{ /*texto descripcion*/
+    
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0px;
+    color:white;
+    padding: 10%;
+}
+p1{ /*Precio dinero*/
+    text-align: justify;
+    font-weight: bolder;
+    margin: 0px;
+    
+    color:black;
+    padding: 0%;
+}
+.imagen .boton3{ /*Boton de Comprar*/
+    background-color: /*#00857a */ #1b4f8f;
+    width: 45%;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 3% 28%;
+}
+.imagen .boton3:hover{
+    background-color:  #1b4f8f;/*color al apunar*/
+    box-shadow: 5px 5px 5px rgb(48, 44, 45);
+    cursor: pointer;
+    background: linear-gradient(-40deg, #7BD5F5, #787FF6, #4ADEDE,#1CA7EC,#1F2F98);
+	background-size: 400%, 400%;
+	animation: gradient 8s ease infinite;
+	border-radius: 10px;
+	text-align: center;
+}
+@keyframes gradient {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+/*RESPONSIBIDAD*/
+@media(max-width: 1100px){
+    .productos .contenido{
+        width: auto;
+        grid-template-columns: auto auto auto auto;
+        text-align: center;
+    }
+}
+@media(max-width: 940px){
+    .productos .contenido{
+        width: auto;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+    }
+}
+@media(max-width: 840px){
+    .productos .contenido{
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+}
+@media(max-width: 750px){
+    .productos .contenido{
+        grid-template-columns: auto;
+        text-align: center;
+    }
+}
+
+@media( max-width: 819px ){
+    .Hamburgesa{
+        width: 30px;
+        position: absolute;
+        top: 40px;
+        transform: translateY(-50%);
+    }
+    .Hamburgesa span{ /*Tres rallitas blancas*/
+        margin-bottom: 3px;
+        background-color: aquamarine;
+        display: block;
+        height: 3px;
+    }
+    /* Haciendo Espacio */
+    .Menu .Logo{
+        margin-left: 50px;
+    }
+    .Menu{
+        position: relative;
+    }
+    nav ul{
+        float: none;
+        width: 300px;
+        padding: 0px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(0, 0, 0);
+        margin: 0px;
+        padding-top: 60px;
+        transition: 1s;
+        left: -100%;
+        z-index: 2;
+    }
+    .open{
+        left: 0;
+    }
+    .Menu ul li{
+        display: block;
+        float: none;
+    }
+    .Menu ul li a{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+    .Cerrar{
+        display: block;
+        position: absolute; /* Evita que se mueva*/
+        width: 50px; /* Ancho */
+        height: 50px; /* Alto */
+        right: 10px;
+        top: 15px;
+        color: rgb(255, 0, 221);
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+
+.Menu .Logo{
+    color: #0065c3;
+    font-size: 25px;
+    line-height: 70px;
+    font-weight: 1000;
+    margin-left: 20px; 
+}
+
+.Menu ul{
+    float: right;
+}
+
+.Menu ul li{
+    display: inline-block;
+    margin: 30px 15px;
+}
+
+.Menu ul li:first-child{
+    color: white;
+}
+
+.ButtonMenu{
+    /*margin-left: 20px;*/
+    font-weight: 700;
+    color: #EBF5EE;
+    padding: 8px 15px;
+    /*padding: 9px 25px;*/
+    background: #0065c3;
+    text-decoration: none;
+    width: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.ButtonMenu:hover{
+    background-color: #1CA7EC;
+    color: #EBF5EE;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all 0.3s ease 0s;
+}
+
+.Menu{
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media( max-width: 950px ){
+    .Hamburgesa{
+        width: 30px;
+        position: absolute;
+        top: 40px;
+        transform: translateY(-50%);
+    }
+    .Hamburgesa span{
+        margin-bottom: 3px;
+        background-color: #0065c3;
+        display: block;
+        height: 3px;
+    }
+    /* Haciendo Espacio */
+    .Menu .Logo{
+        margin-left: 50px;
+    }
+    .Menu{
+        position: relative;
+    }
+    nav ul{
+        float: none;
+        width: 300px;
+        padding: 0px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: #787FF6;
+        margin: 0px;
+        padding-top: 60px;
+        transition: 1s;
+        left: -100%;
+        z-index: 2;
+        color: white;
+        background: linear-gradient(-40deg, #7BD5F5, #787FF6, #4ADEDE,#1CA7EC,#1F2F98);
+        background-size: 400%, 400%;
+        animation: gradient 10s ease infinite;
+    }
+    @keyframes gradient {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+    }
+    .Open{
+        left: 0;
+    }
+    .Menu ul li{
+        display: block;
+        float: none;
+    }
+    .Menu ul li a{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+    .Cerrar{
+        display: block;
+        position: absolute; /* Evita que se Mueva XD */
+        width: 50px; /* Ancho */
+        height: 50px; /* Alto */
+        right: 10px;
+        top: 15px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+.redes{
+    color: white; /*#ff00fc*/
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    min-width: 50%;
+    text-align: center;
+    background: linear-gradient(-45deg, #7BD5F5, #787FF6, #4ADEDE,#1CA7EC,#1F2F98);
+	background-size: 400%, 400%;
+	animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+.espacio{
+    margin: 10px 10px;
+}
+
+.redes .Linea{
+    width: 200px;
+    height: 6px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}

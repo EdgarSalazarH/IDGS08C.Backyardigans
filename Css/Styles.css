@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Righteous&family=Unbounded&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+}
+
+.Menu .Logo{
+    color: #0065c3;
+    font-size: 25px;
+    line-height: 70px;
+    font-weight: 1000;
+    margin-left: 20px; 
+}
+
+.Menu ul{
+    float: right;
+}
+
+.Menu ul li{
+    display: inline-block;
+    margin: 30px 15px;
+}
+
+.Menu ul li:first-child{
+    color: white;
+}
+
+.ButtonMenu{
+    /*margin-left: 20px;*/
+    font-weight: 700;
+    color: #EBF5EE;
+    padding: 8px 15px;
+    /*padding: 9px 25px;*/
+    background: #0065c3;
+    text-decoration: none;
+    width: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.ButtonMenu:hover{
+    background-color: #1CA7EC;
+    color: #EBF5EE;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all 0.3s ease 0s;
+}
+
+.Menu{
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.Banner{
+    width: 100%;
+    position: relative;
+    height: 100vh; /* Se adapta al tamaño vertical */
+    left: 0;
+    top: 0;
+    z-index: 1; /* Las Posiciones en que se muesrta la informacion */
+	width: 100%;/*anchura*/
+	background: linear-gradient(-40deg, #7BD5F5, #787FF6, #4ADEDE,#1CA7EC,#1F2F98);
+	background-size: 400%, 400%;
+	animation: gradient 10s ease infinite;
+	text-align: center;
+    min-width:90%;
+}
+@keyframes gradient {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+.Banner .Texto_Banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    min-width: 40%;
+    min-height: 20%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Banner .Texto_Banner h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.Banner .Texto_Banner h1{
+    font-size: 20px;
+}
+
+.Banner .Texto_Banner p{
+    text-align: justify;
+    color: white;
+    margin: 0;
+}
+
+/*Quienes Somos */
+.Nosotros{
+    padding: 10px 100px;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.Titulo{
+    font-family: 'Amaranth', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 33px;
+    text-align: center;
+}
+
+.Linea{
+    width: 200px;
+    height: 6px;
+    background-color: #0065c3;
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.Button{
+    background-color: #0065c3;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 15px;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.Button:hover{
+    background-color: #1CA7EC;
+    box-shadow: 5px 5px 5px gray;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+
+.Servicios{
+    margin: 50px 70px;
+}
+
+.Servicios .Contenido{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+
+.Imagen img{
+    width: 90%;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.Servicios h1{
+    text-align: center;
+}
+
+.Imagen p{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.Imagen .Button2{
+    background-color: #0065c3;
+    box-shadow: 5px 5px 5px gray;
+    width: 100px;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.Imagen .Button2:hover{
+    background-color: #1CA7EC;
+    box-shadow: 5px 5px 5px gray;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease 0s;   
+}
+
+@media( max-width: 950px ){
+    .Hamburgesa{
+        width: 30px;
+        position: absolute;
+        top: 40px;
+        transform: translateY(-50%);
+    }
+    .Hamburgesa span{
+        margin-bottom: 3px;
+        background-color: #0065c3;
+        display: block;
+        height: 3px;
+    }
+    /* Haciendo Espacio */
+    .Menu .Logo{
+        margin-left: 50px;
+    }
+    .Menu{
+        position: relative;
+    }
+    nav ul{
+        float: none;
+        width: 300px;
+        padding: 0px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: #787FF6;
+        margin: 0px;
+        padding-top: 60px;
+        transition: 1s;
+        left: -100%;
+        z-index: 2;
+        color: white;
+        background: linear-gradient(-40deg, #7BD5F5, #787FF6, #4ADEDE,#1CA7EC,#1F2F98);
+        background-size: 400%, 400%;
+        animation: gradient 10s ease infinite;
+    }
+    @keyframes gradient {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+    }
+    .Open{
+        left: 0;
+    }
+    .Menu ul li{
+        display: block;
+        float: none;
+    }
+    .Menu ul li a{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+    .Cerrar{
+        display: block;
+        position: absolute; /* Evita que se Mueva XD */
+        width: 50px; /* Ancho */
+        height: 50px; /* Alto */
+        right: 10px;
+        top: 15px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+
+.Redes{
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    min-width: 50%;
+    position: relative;
+	background: linear-gradient(-40deg, #7BD5F5, #787FF6, #4ADEDE,#1CA7EC,#1F2F98);
+	background-size: 400%, 400%;
+	animation: gradient 10s ease infinite;
+	text-align: center;
+}
+@keyframes gradient {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+.Redes i{
+    cursor: pointer;
+}
+
+.Espacio{
+    margin: 20px 20px;
+}
+
+.Redes .Linea{
+    width: 200px;
+    height: 6px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+/* Inicio de Sesion y Crear Cuenta */
+.Login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.Login h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.Login .Usuario input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid White;
+    outline: none;
+    background: transparent;
+}
+
+.Login .Usuario label{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: White;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.Login .Usuario input:focus~label,
+.Login .Usuario input:valid~label{
+    top: -85px;
+    left: 0;
+    color: #1CA7EC;
+    font-size: 12px;
+}
+
+#Enviar {
+    padding: 10px 20px;
+    margin: 0 0 30px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: none;
+    overflow: hidden;
+    transition: .5s;
+    border: 1px solid rgba(0, 0, 0, 0.5);;
+    margin: auto;
+    background: #0065c3;
+    border-radius: 10px;
+}
+
+#Enviar:hover{
+    background-color: #1CA7EC;
+    color: white;
+    transform: scale(1.1);
+}
+
+.ButtonLogin .ButtonAlta{
+    padding: 10px 20px;
+    margin: 0 0 30px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: none;
+    overflow: hidden;
+    transition: .5s;
+    border: 1px solid rgba(0, 0, 0, 0.5);;
+    margin: auto;
+    background: #0065c3;
+    border-radius: 10px;
+}
+
+.ButtonAlta{
+    background-color: #1CA7EC;
+    color: white;
+    transform: scale(1.1);
+}
+
+.ButtonLogin{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#Registro{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#Registro a{
+    margin: auto;
+    color: #1CA7EC;
+    text-decoration: none;
+}
+
+/* Modo de Inicio */
+.ButtonModo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.Menu .LogoInicio{
+    color: #0065c3;
+    font-size: 25px;
+    line-height: 70px;
+    font-weight: 1000;
+    margin-left: 20px; 
+    text-align: center;
+}
+
+.Logins{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+}
+
+/* Tabla */
+.table {
+    margin:0 auto;
+    table-layout: auto;
+}
+.table th {
+    background: #0065c3 ;
+    padding: 15px;
+}
+.table td {
+    padding: 10px;
+    background: rgba(255,255,255, .25);
+}
+
+/* Arreglando el contenedor login XD */
+@media( max-width: 400px ){
+    .Login{
+        width: 100%;
+    }
+    .Banner{
+        min-width: 100%;
+    }
+    .Logins{
+        width: 100%;
+    }
+}
+
+/* Banner del Index XD */
+section { padding: 30px 15%;}
+
+@media( width <= 720px) {
+    section { padding: 30px 10%;}
+}
+
+.Banners{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 40vw;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+@media( width <= 620px){
+    .Banners{
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+.Banners::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 200%;
+    height: 110%;
+    rotate: -2deg;
+    background: linear-gradient(-40deg, #7BD5F5, #787FF6, #4ADEDE,#1CA7EC,#1F2F98);
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+
+.Banners h2{
+    white-space: nowrap;
+    margin: 0 0 4px;
+    font-size: 40px;
+    color: #EBF5EE;
+}
+
+.Banners h3{
+    font-weight: 400;
+    margin: 0;
+    color:  #EBF5EE
+}
+
+@keyframes morph {
+    0%,
+    100% {
+        border-radius: 
+        40% 60% 70% 30% /
+        40% 40% 60% 50%;
+    }
+    34% {
+        border-radius: 
+        70% 30% 50% 50% /
+        30% 30% 70% 70%;
+    }
+    67% {
+        border-radius: 
+        100% 60% 60% 100% /
+        100% 100% 60% 60%;
+    }
+}
+
+.Banners img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    animation: 
+    morph 3.5s linear infinite;
+}
+
+@media( max-width: 705px ){
+    .table{
+        width: 100%;
+        table-layout: auto;
+    }
+    .Banner{
+        min-width: 100%;
+    }
+}
